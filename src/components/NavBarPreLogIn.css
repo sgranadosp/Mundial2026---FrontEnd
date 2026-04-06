@@ -1,0 +1,21 @@
+/* NavBarPreLogIn.css */
+
+.nav-buttons-container {
+  display: flex;
+  margin-left: 320px;
+  align-items: center;
+  gap: 40px;                /* Espacio entre botones, reemplaza el marginRight */
+}
+
+.nav-button {
+  color: white !important;
+  font-family: 'Lexend', sans-serif !important; /* Cambia la fuente aquí */
+  font-size: 3rem !important;                  /* Cambia el tamaño aquí */
+  font-weight: 600 !important;
+  text-transform: none !important;             /* Evita que MUI ponga todo en mayúsculas */
+  letter-spacing: 2px !important;
+}
+
+.nav-button:hover {
+  color: #d4af37 !important; /* Color dorado al pasar el mouse, opcional */
+}
