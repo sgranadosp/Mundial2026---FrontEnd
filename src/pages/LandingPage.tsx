@@ -1,3 +1,4 @@
+import LandingForm from "../components/LandingForm";
 import NavBarPreLogIn from "../components/NavBarPreLogIn";
 
 const LandingPage = () => {
@@ -8,6 +9,9 @@ const LandingPage = () => {
         <NavBarPreLogIn />
       </div>
       {/* Contenido principal: formulario de inicio */}
+      <div>
+        <LandingForm />
+      </div>
     </>
   );
 };
