@@ -19,13 +19,13 @@
 .custom-login-card .p-card-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .custom-login-card .p-card-subtitle {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .btn-container {
@@ -37,7 +37,7 @@
 .btn-login {
   background: transparent;
   border: none;
-  color: #003cff;
+  color: #d6a049    ;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -53,11 +53,11 @@
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 1rem;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .register-link {
-  color: #003cff;
+  color: #d6a049;
   text-decoration: none;
   font-weight: 600;
 }
@@ -69,10 +69,10 @@
 
 /* Borde al hacer hover */
 .custom-login-card .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-  border-color: #003cff ;
+  border-color: #d6a049 ;
 }
 
 /* Borde al hacer foco (cuando está activo) */
 .custom-login-card .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #003cff;
+  border-color: #d6a049;
 }

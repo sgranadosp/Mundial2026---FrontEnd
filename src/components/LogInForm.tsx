@@ -14,10 +14,11 @@ const LoginForm = () => {
         subTitle="Ingresa tus credenciales para continuar"
         className="custom-login-card"
         style={{
-          border: "2px solid #0800ff",
+          border: "2px solid #d6a049",
           borderRadius: "10px",
           padding: "1.5rem",
           width: "410px",
+          backgroundColor: "#121212",
         }}
       >
         <form onSubmit={handleSubmit} noValidate autoComplete="off">
@@ -28,8 +29,24 @@ const LoginForm = () => {
             margin="dense"
             fullWidth
             helperText="* Campo obligatorio"
+            sx={{
+                input: { color: "#fff" }, // texto que escribes
+                "& input::placeholder": { color: "#aaa" }, // placeholder
+                label: { color: "#fefefe" }, // label normal
+                "& label.Mui-focused": { color: "#d6a049" }, // label activo
+
+                "& .MuiOutlinedInput-root": {
+                "& fieldset": { borderColor: "#c4c4c4" }, // borde normal
+                "&:hover fieldset": { borderColor: "#d6a049" }, // hover
+                "&.Mui-focused fieldset": { borderColor: "#d6a049" } // focus
+                },
+
+                "& .MuiFormHelperText-root": {
+                color: "#fbfbfb" 
+                }
+            }}
           />
-          <TextField
+        <TextField
             label="Contraseña"
             type="password"
             variant="outlined"
@@ -37,7 +54,23 @@ const LoginForm = () => {
             margin="dense"
             fullWidth
             helperText="* Campo obligatorio"
-          />
+            sx={{
+                input: { color: "#fff" }, // texto que escribes
+                "& input::placeholder": { color: "#aaa" }, // placeholder
+                label: { color: "#ffffff" }, // label normal
+                "& label.Mui-focused": { color: "#d6a049" }, // label activo
+
+                "& .MuiOutlinedInput-root": {
+                "& fieldset": { borderColor: "#c8c8c8" }, // borde normal
+                "&:hover fieldset": { borderColor: "#d6a049" }, // hover
+                "&.Mui-focused fieldset": { borderColor: "#d6a049" } // focus
+                },
+
+                "& .MuiFormHelperText-root": {
+                color: "#ffffff" 
+                }
+            }}
+        />
 
           <div className="btn-container">
             <button className="btn-login" type="submit">
