@@ -1,0 +1,78 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.custom-login-card {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.custom-login-card .p-card-title,
+.custom-login-card .p-card-subtitle,
+.custom-login-card p,
+.custom-login-card button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.custom-login-card .p-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.custom-login-card .p-card-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.btn-login {
+  background: transparent;
+  border: none;
+  color: #003cff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.btn-login:hover {
+  text-decoration: underline;
+}
+
+.register-footer-text {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #1a1a1a;
+}
+
+.register-link {
+  color: #003cff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Borde al hacer hover */
+.custom-login-card .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #003cff ;
+}
+
+/* Borde al hacer foco (cuando está activo) */
+.custom-login-card .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #003cff;
+}
