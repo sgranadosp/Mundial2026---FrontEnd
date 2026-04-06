@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function USACard() {
+export default function CANCard() {
   return (
     <Card
       sx={{
@@ -17,18 +17,18 @@ export default function USACard() {
     >
       <CardMedia
         sx={{ height: 140 }}
-        image="/banderaUSA.png"
-        title="USA anfitrión"
+        image="/banderaCAN.png"
+        title="Canadá anfitrión"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Estados Unidos (USA)
+          Canadá (CND)
         </Typography>
         <Typography variant="body2" sx={{ color: "rgba(255,255,255,0.75)" }}>
-          Estados Unidos, federación de fútbol perteneciente a la Concacaf, es
-          uno de los tres anfitriones del Mundial 2026, contando con estadios de
-          primer nivel, preparados para enfrentar a los mejores futbolistas del
-          mundo.
+          Canadá, federación de fútbol perteneciente a la Concacaf, es el
+          tercero de los anfitriones del Mundial 2026, contando con paisajes y
+          naturaleza impresionantes y con estadios perfectos para alojar a las
+          48 mejores selecciones del deporte.
         </Typography>
       </CardContent>
       <CardActions>

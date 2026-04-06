@@ -1,0 +1,8 @@
+.landing-cards-container {
+  display: flex;
+  flex-direction: row;       /* las cards en fila horizontal */
+  justify-content: center;   /* centradas horizontalmente */
+  align-items: flex-start;   /* alineadas arriba */
+  gap: 40px;                 /* espacio entre cards */
+  flex-wrap: wrap;           /* en móvil se apilan solas */
+}

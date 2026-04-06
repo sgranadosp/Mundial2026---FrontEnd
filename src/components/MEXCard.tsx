@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function USACard() {
+export default function MEXCard() {
   return (
     <Card
       sx={{
@@ -17,18 +17,17 @@ export default function USACard() {
     >
       <CardMedia
         sx={{ height: 140 }}
-        image="/banderaUSA.png"
-        title="USA anfitrión"
+        image="/banderaMEX.png"
+        title="México anfitrión"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Estados Unidos (USA)
+          México (MEX)
         </Typography>
         <Typography variant="body2" sx={{ color: "rgba(255,255,255,0.75)" }}>
-          Estados Unidos, federación de fútbol perteneciente a la Concacaf, es
-          uno de los tres anfitriones del Mundial 2026, contando con estadios de
-          primer nivel, preparados para enfrentar a los mejores futbolistas del
-          mundo.
+          México, federación de fútbol perteneciente a la Concacaf, es el
+          segundo de los anfitriones del Mundial 2026, contando con el imponente
+          estadio Azteca, con una de las mejores hinchadas del deporte.
         </Typography>
       </CardContent>
       <CardActions>

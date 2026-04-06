@@ -4,12 +4,9 @@ import NavBarPreLogIn from "../components/NavBarPreLogIn";
 const LandingPage = () => {
   return (
     <>
-      {/* Barra de navegación superior sin sección de perfil */}
-      <div>
-        <NavBarPreLogIn />
-      </div>
-      {/* Contenido principal: formulario de inicio */}
-      <div>
+      <NavBarPreLogIn />
+      {/* paddingTop compensa la altura del navbar fixed (120px) + 50px extra que pides */}
+      <div style={{ paddingTop: "170px" }}>
         <LandingForm />
       </div>
     </>
