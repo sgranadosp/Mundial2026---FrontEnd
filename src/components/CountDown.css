@@ -1,0 +1,56 @@
+.countdown-wrapper {
+  background-color: #3a5bd9; /* azul FIFA */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.countdown-titulo {
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.countdown-subtitulo {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  margin: 4px 0 0 0;
+}
+
+.countdown-bloques {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.countdown-bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-numero {
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.countdown-label {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  text-transform: lowercase;
+  margin-top: 4px;
+}

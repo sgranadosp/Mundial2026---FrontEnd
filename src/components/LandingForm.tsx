@@ -9,7 +9,6 @@ const LandingForm = () => {
       <USACard />
       <MEXCard />
       <CANCard />
-      {/* Aquí irán después CanadaCard y MexicoCard */}
     </div>
   );
 };

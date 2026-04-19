@@ -2,7 +2,7 @@
 
 .nav-buttons-container {
   display: flex;
-  margin-left: 320px;
+  margin-left: 220px;
   align-items: center;
   gap: 40px;                /* Espacio entre botones, reemplaza el marginRight */
 }
