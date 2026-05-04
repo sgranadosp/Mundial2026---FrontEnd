@@ -1,0 +1,34 @@
+.sidebar {
+  width: 220px;
+  background: #111;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hover */
+.sidebar a:hover {
+  background: #1e1e1e;
+}
+
+/* ACTIVO 🔥 */
+.sidebar .active {
+  background: #d6a049;
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,97 @@
+.pollas-container {
+  display: flex;
+  background: #0b0b0b;
+  color: white;
+  min-height: calc(100vh - 70px);
+  margin-top: 64px;
+}
+
+/* CONTENT */
+
+
+/* WELCOME */
+.welcome {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+/* GROUPS */
+.groups {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.group-card {
+  background: #111;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.group-card:hover {
+  border-color: #d6a049;
+}
+
+/* PREDICTIONS */
+.predictions {
+  display: flex;
+  gap: 20px;
+}
+
+/* CARD */
+.card-pred {
+  flex: 1;
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #1d4ed8;
+}
+
+/* MATCH */
+.match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.score input {
+  width: 40px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.match button {
+  background: #444;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* EVALUATED */
+.evaluated {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.points {
+  background: #333;
+  padding: 8px;
+  border-radius: 5px;
+}

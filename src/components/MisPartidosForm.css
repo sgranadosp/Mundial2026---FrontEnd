@@ -1,0 +1,140 @@
+.mispartidos-container {
+  display: flex;
+  background: #0b0b0b;
+  color: white;
+  min-height: calc(100vh - 64px);
+  margin-top: 64px;
+}
+
+.mispartidos-content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* HEADER */
+.mispartidos-header {
+  background: #111;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  width: fit-content;
+}
+
+.mispartidos-header h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+}
+
+.mispartidos-header p {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* BODY */
+.mispartidos-body {
+  display: flex;
+  gap: 20px;
+}
+
+/* CARD ENTRADAS */
+.card-entradas {
+  flex: 1;
+  background: #111;
+  border-radius: 10px;
+  border: 2px solid #1d4ed8;
+  padding: 15px;
+}
+
+.entrada {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.entrada-badge {
+  background: #1d4ed8;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+.entrada-titulo {
+  margin: 4px 0 2px 0;
+  font-weight: 600;
+}
+
+.entrada-detalle {
+  color: #aaa;
+  font-size: 0.82rem;
+}
+
+.entrada-acciones {
+  display: flex;
+  gap: 10px;
+}
+
+/* CARD RESERVA */
+.card-reserva {
+  flex: 1;
+  background: #111;
+  border-radius: 10px;
+  border: 2px solid #1d4ed8;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-reserva h3 {
+  margin: 0 0 8px 0;
+}
+
+.card-reserva label {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.card-reserva select {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.reserva-btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* BOTONES */
+.btn-primary {
+  background: #1d4ed8;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  background: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #444;
+}

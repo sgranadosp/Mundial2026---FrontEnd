@@ -1,0 +1,153 @@
+.partidos-container {
+  display: flex;
+  background: #0b0b0b;
+  color: white;
+  min-height: calc(100vh - 64px);
+  margin-top: 64px;
+}
+
+.partidos-content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filtro-btn {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filtro-btn:hover,
+.filtro-btn.active {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* FECHA */
+.fecha-picker {
+  margin-bottom: 20px;
+}
+
+.fecha-picker input {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  width: 200px;
+  color-scheme: dark;
+}
+
+/* FASES */
+.fases {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
+}
+
+.fase-tab {
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.fase-tab:hover {
+  color: white;
+  background: #1a1a1a;
+}
+
+.fase-tab.active {
+  color: white;
+  background: #1d4ed8;
+}
+
+/* TABLA */
+.tabla-partidos {
+  background: #111;
+  border-radius: 10px;
+  border: 2px solid #1d4ed8;
+  padding: 15px;
+}
+
+.partido-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.partido-nombre {
+  flex: 1;
+  font-weight: 600;
+}
+
+.partido-estado {
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.partido-estado.programado {
+  background: #1d4ed8;
+}
+
+.partido-estado.envivo {
+  background: #16a34a;
+}
+
+.partido-info {
+  flex: 2;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.tabla-partidos hr {
+  border-color: #222;
+  margin: 0;
+}
+
+/* BOTONES */
+.btn-pronosticar {
+  background: #1d4ed8;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn-pronosticar:hover {
+  background: #1e40af;
+}
+
+.btn-detalles {
+  background: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-detalles:hover {
+  background: #444;
+}
