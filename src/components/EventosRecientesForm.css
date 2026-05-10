@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.eventos-container {
+  display: flex;
+  background: #0b0b0b;
+  color: white;
+  min-height: 100vh;
+  margin-top: 70px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #111;
+  padding: 20px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar li:hover {
+  background: #1e1e1e;
+}
+
+.sidebar .active {
+  background: #1d4ed8;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* HEADER */
+.eventos-header {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.eventos-header h2 {
+  font-size: 22px;
+}
+
+/* PANEL */
+.eventos-panel {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1d4ed8;
+}
+
+.eventos-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.eventos-top h3 {
+  font-size: 18px;
+}
+
+/* BOTÓN MARCAR TODAS */
+.marcar-btn {
+  background: #2a2a2a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #3a3a3a;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.marcar-btn:hover {
+  background: #3a3a3a;
+  border-color: #4a4a4a;
+}
+
+/* LISTA */
+.eventos-lista {
+  list-style: none;
+}
+
+.evento-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #1a1a1a;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.evento-item:last-child {
+  border-bottom: none;
+}
+
+.evento-item:hover {
+  background: #161616;
+}
+
+.evento-texto {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ESTADOS: DESTACADO / NORMAL */
+.evento-item.destacado .evento-texto {
+  color: white;
+  font-weight: bold;
+}
+
+.evento-item.normal .evento-texto {
+  color: #888;
+  font-weight: normal;
+}
+
+/* MINUTO Y TIEMPO */
+.evento-minuto,
+.evento-tiempo {
+  font-weight: normal;
+  color: inherit;
+}
+
+/* VACÍO */
+.vacio {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 0;
+}

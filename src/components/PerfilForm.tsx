@@ -1,75 +1,160 @@
+import { useState } from "react";
 import "./PerfilForm.css";
 import Sidebar from "./SideBar";
 
 const PerfilForm = () => {
+  // Datos del usuario
+  const [nombreCompleto, setNombreCompleto] = useState("Juan Díaz Caicedo");
+  const [correo, setCorreo] = useState("juan.diaz@gmail.com");
+
+  // Preferencias
+  const [equipoFavorito, setEquipoFavorito] = useState("Colombia (COL)");
+  const [ciudadPreferida, setCiudadPreferida] = useState("Miami, EE.UU.");
+  const [notifPush, setNotifPush] = useState(true);
+  const [notifEmail, setNotifEmail] = useState(false);
+
+  // Opciones disponibles
+  const equipos = [
+    "Colombia (COL)",
+    "Argentina (ARG)",
+    "Brasil (BRA)",
+    "España (ESP)",
+    "Francia (FRA)",
+    "Alemania (GER)",
+    "Inglaterra (ENG)",
+    "México (MEX)",
+  ];
+
+  const ciudades = [
+    "Miami, EE.UU.",
+    "Nueva York, EE.UU.",
+    "Los Ángeles, EE.UU.",
+    "CDMX, México",
+    "Toronto, Canadá",
+    "Bogotá, Colombia",
+  ];
+
+  const handleActualizar = () => {
+    console.log("Actualizar perfil:", { nombreCompleto, correo });
+    // Aquí va la llamada al backend
+  };
+
+  const handleReservar = () => {
+    console.log("Reservar preferencias:", {
+      equipoFavorito,
+      ciudadPreferida,
+      notifPush,
+      notifEmail,
+    });
+    // Aquí va la llamada al backend
+  };
+
   return (
     <div className="perfil-container">
 
-      <Sidebar />
+      <Sidebar/>
 
       {/* CONTENIDO */}
       <section className="content">
 
-        {/* BIENVENIDA */}
-        <div className="welcome">
-          <h2>Bienvenido Juan</h2>
-          <p>Mundial 2026 - 4 partidos a disputarse hoy</p>
+        {/* HEADER */}
+        <div className="perfil-header">
+          <h2>Mi perfil</h2>
         </div>
 
-        {/* CARDS */}
-        <div className="cards">
-          <div className="card">
-            <h3>Pronósticos</h3>
-            <p className="big">23</p>
-            <span>8 pendientes</span>
+        {/* PANELES */}
+        <div className="paneles">
+
+          {/* DATOS DEL USUARIO */}
+          <div className="panel">
+            <div className="usuario-top">
+              <div className="avatar">
+                <span>👤</span>
+              </div>
+              <div className="usuario-info">
+                <h3>Juan Díaz</h3>
+                <span className="badge">Usuario</span>
+              </div>
+            </div>
+
+            <label className="campo-label">Nombre completo</label>
+            <input
+              type="text"
+              className="campo-input"
+              value={nombreCompleto}
+              onChange={(e) => setNombreCompleto(e.target.value)}
+            />
+
+            <label className="campo-label">Correo electrónico</label>
+            <input
+              type="email"
+              className="campo-input"
+              value={correo}
+              onChange={(e) => setCorreo(e.target.value)}
+            />
+
+            <button className="actualizar-btn" onClick={handleActualizar}>
+              Actualizar
+            </button>
           </div>
 
-          <div className="card">
-            <h3>Aciertos</h3>
-            <p className="big">14</p>
-            <span>60.8% precisión</span>
+          {/* PREFERENCIAS */}
+          <div className="panel">
+            <h3 className="panel-titulo">Preferencias</h3>
+
+            <label className="campo-label">Equipo favorito</label>
+            <select
+              className="campo-select"
+              value={equipoFavorito}
+              onChange={(e) => setEquipoFavorito(e.target.value)}
+            >
+              {equipos.map((eq) => (
+                <option key={eq} value={eq}>
+                  {eq}
+                </option>
+              ))}
+            </select>
+
+            <label className="campo-label">Ciudad preferida</label>
+            <select
+              className="campo-select"
+              value={ciudadPreferida}
+              onChange={(e) => setCiudadPreferida(e.target.value)}
+            >
+              {ciudades.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
+
+            <button className="reservar-btn" onClick={handleReservar}>
+              Reservar
+            </button>
+
+            <div className="checkboxes">
+              <label className="check-item">
+                <input
+                  type="checkbox"
+                  checked={notifPush}
+                  onChange={(e) => setNotifPush(e.target.checked)}
+                />
+                <span>Notificaciones push</span>
+              </label>
+
+              <label className="check-item">
+                <input
+                  type="checkbox"
+                  checked={notifEmail}
+                  onChange={(e) => setNotifEmail(e.target.checked)}
+                />
+                <span>Notificaciones email</span>
+              </label>
+            </div>
           </div>
 
-          <div className="card">
-            <h3>Posición polla</h3>
-            <p className="big">#3</p>
-            <span>de 8 miembros</span>
-          </div>
-
-          <div className="card">
-            <h3>Álbum</h3>
-            <p className="big">68%</p>
-            <span>204 / 300 láminas</span>
-          </div>
         </div>
 
-        {/* PARTE INFERIOR */}
-        <div className="bottom">
-
-          <div className="matches">
-            <h3>Próximos partidos</h3>
-
-            <p>Colombia vs Brasil</p>
-            <span>Hoy - 20:00</span>
-
-            <p>Argentina vs Francia</p>
-            <span>Hoy - 22:00</span>
-
-            <p>España vs Alemania</p>
-            <span>Mañana - 18:00</span>
-          </div>
-
-          <div className="ranking">
-            <h3>Mi polla — Los del trabajo</h3>
-            <ul>
-              <li>1. Carlos M. - 41 pts</li>
-              <li>2. Sofía R. - 38 pts</li>
-              <li>3. Tú (Juan) - 35 pts</li>
-              <li>4. Miguel A. - 29 pts</li>
-            </ul>
-          </div>
-
-        </div>
       </section>
     </div>
   );

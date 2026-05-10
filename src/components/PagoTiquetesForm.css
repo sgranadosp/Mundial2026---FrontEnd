@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 
-.perfil-container {
+.pago-container {
   display: flex;
   background: #0b0b0b;
   color: white;
@@ -52,14 +52,14 @@ body {
 }
 
 /* HEADER */
-.perfil-header {
+.pago-header {
   background: #111;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.perfil-header h2 {
+.pago-header h2 {
   font-size: 22px;
 }
 
@@ -77,42 +77,59 @@ body {
 }
 
 .panel-titulo {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
-/* USUARIO TOP */
-.usuario-top {
+/* RESUMEN */
+.resumen-row {
   display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
 }
 
-.avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+.resumen-label {
+  color: #aaa;
+}
+
+.resumen-valor {
+  color: white;
+}
+
+.resumen-divisor {
+  height: 1px;
   background: #2a2a2a;
+  margin: 10px 0;
+}
+
+/* MÉTODOS DE PAGO */
+.metodos-row {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  flex-shrink: 0;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
-.usuario-info h3 {
-  font-size: 20px;
-  margin-bottom: 6px;
-}
-
-.badge {
-  background: #22c55e;
-  color: #0b0b0b;
-  padding: 3px 10px;
+.metodo-btn {
+  flex: 1;
+  background: #2a2a2a;
+  color: white;
+  padding: 10px;
   border-radius: 6px;
-  font-size: 12px;
-  font-weight: 500;
+  border: 1px solid #3a3a3a;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.metodo-btn:hover {
+  background: #3a3a3a;
+}
+
+.metodo-btn.activo {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
 }
 
 /* CAMPOS */
@@ -124,8 +141,7 @@ body {
   margin-top: 12px;
 }
 
-.campo-input,
-.campo-select {
+.campo-input {
   width: 100%;
   background: #2a2a2a;
   color: white;
@@ -136,28 +152,31 @@ body {
   font-size: 13px;
 }
 
-.campo-input:focus,
-.campo-select:focus {
+.campo-input:focus {
   outline: none;
   border-color: #d6a049;
 }
 
-.campo-select {
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 32px;
+.campo-input::placeholder {
+  color: #666;
 }
 
-/* BOTONES */
-/* BOTONES */
-.actualizar-btn,
-.reservar-btn {
+/* FILA DOBLE (vencimiento + cvv) */
+.fila-doble {
+  display: flex;
+  gap: 10px;
+}
+
+.campo-mitad {
+  flex: 1;
+}
+
+/* BOTÓN CONFIRMAR */
+.confirmar-btn {
+  width: 100%;
   background: #1d4ed8;
   color: white;
-  padding: 12px 28px;
+  padding: 12px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -168,36 +187,31 @@ body {
   transition: background 0.2s, transform 0.1s;
 }
 
-.actualizar-btn:hover,
-.reservar-btn:hover {
+.confirmar-btn:hover {
   background: #2563eb;
 }
 
-.actualizar-btn:active,
-.reservar-btn:active {
+.confirmar-btn:active {
   background: #1e40af;
   transform: scale(0.98);
 }
 
-/* CHECKBOXES */
-.checkboxes {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* CANCELAR LINK */
+.cancelar-link {
+  width: 100%;
+  background: transparent;
+  color: #aaa;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: inherit;
+  margin-top: 8px;
+  text-align: center;
+  transition: color 0.2s;
 }
 
-.check-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.check-item input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  accent-color: #1d4ed8;
+.cancelar-link:hover {
+  color: white;
+  text-decoration: underline;
 }

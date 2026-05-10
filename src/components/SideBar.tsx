@@ -6,7 +6,7 @@ const Sidebar = () => {
     <aside className="sidebar">
       <ul>
         <li>
-          <NavLink to="/perfil" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/inicio" className={({ isActive }) => isActive ? "active" : ""}>
             INICIO
           </NavLink>
         </li>
@@ -24,7 +24,7 @@ const Sidebar = () => {
         </li>
 
         <li>
-          <NavLink to="/ranking" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/rankingPollas" className={({ isActive }) => isActive ? "active" : ""}>
             RANKING POLLAS
           </NavLink>
         </li>
@@ -42,7 +42,7 @@ const Sidebar = () => {
         </li>
 
         <li>
-          <NavLink to="/intercambioLaminas" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/cambioLaminas" className={({ isActive }) => isActive ? "active" : ""}>
             INTERCAMBIO LÁMINAS
           </NavLink>
         </li>
@@ -66,7 +66,7 @@ const Sidebar = () => {
         </li>
 
         <li>
-          <NavLink to="/miPerfil" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/perfil" className={({ isActive }) => isActive ? "active" : ""}>
             MI PERFIL
           </NavLink>
         </li>

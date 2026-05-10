@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import "./MisPartidosForm.css";
 import Sidebar from "./SideBar";
 
 const MisPartidosForm = () => {
+  const navigate = useNavigate();
+
+  const handlePagar = () => {
+    navigate("/pagoTiquetes");
+  };
+
   return (
     <div className="mispartidos-container">
       <Sidebar />
@@ -51,7 +58,7 @@ const MisPartidosForm = () => {
 
             <div className="reserva-btns">
               <button className="btn-secondary">Reservar</button>
-              <button className="btn-primary">Pagar</button>
+              <button className="btn-primary" onClick={handlePagar}>Pagar</button>
             </div>
           </div>
 
