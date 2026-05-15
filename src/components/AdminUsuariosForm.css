@@ -1,0 +1,256 @@
+.admin-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0f4023;
+  color: #4ade80;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* TITLE ROW */
+.usuarios-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.usuarios-search {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 7px;
+  font-size: 0.82rem;
+  width: 260px;
+  outline: none;
+}
+
+.usuarios-search:focus {
+  border-color: #1d4ed8;
+}
+
+/* TABLE */
+.usuarios-table {
+  width: 100%;
+}
+
+.usuarios-thead {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 90px 90px 200px;
+  gap: 8px;
+  font-size: 0.7rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 8px 10px;
+  border-bottom: 1px solid #222;
+  margin-bottom: 4px;
+}
+
+.usuarios-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 90px 90px 200px;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 8px;
+  border-bottom: 1px solid #1a1a1a;
+  font-size: 0.82rem;
+  transition: background 0.1s;
+}
+
+.usuarios-row:hover {
+  background: #141414;
+}
+
+.row-bloqueado {
+  opacity: 0.55;
+}
+
+.col-id {
+  color: #555;
+  font-size: 0.75rem;
+}
+
+.col-nombre {
+  font-weight: 600;
+  color: #eee;
+}
+
+.col-email {
+  color: #999;
+  font-size: 0.78rem;
+}
+
+/* ROL SELECT */
+.rol-select {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+.rol-select.rol-admin {
+  border-color: #d6a049;
+  color: #d6a049;
+}
+
+.rol-select.rol-user {
+  border-color: #1d4ed8;
+  color: #60a5fa;
+}
+
+/* ESTADO */
+.estado-badge {
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.estado-activo {
+  background: #0f4023;
+  color: #4ade80;
+}
+
+.estado-bloqueado {
+  background: #4a1111;
+  color: #f87171;
+}
+
+/* ACCIONES */
+.col-acciones {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn-bloquear {
+  background: #3b1f00;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fb923c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-bloquear:hover { background: #5c2e00; }
+
+.btn-desbloquear {
+  background: #0f3060;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-desbloquear:hover { background: #1d4ed8; color: white; }
+
+.btn-eliminar {
+  background: #4a1111;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #f87171;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-eliminar:hover { background: #6b1a1a; }
+
+.usuarios-empty {
+  padding: 30px;
+  text-align: center;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #111;
+  border: 2px solid #1d4ed8;
+  border-radius: 12px;
+  padding: 28px 32px;
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-box p {
+  font-size: 0.95rem;
+  color: #eee;
+  margin-bottom: 10px;
+}
+
+.modal-warning {
+  color: #f87171 !important;
+  font-size: 0.8rem !important;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-cancelar {
+  background: #222;
+  border: 1px solid #444;
+  padding: 8px 20px;
+  border-radius: 7px;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+}
+
+.btn-cancelar:hover { background: #333; }
+
+.btn-confirmar-peligro {
+  background: #7c2d12;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+}
+
+.btn-confirmar-peligro:hover { background: #991b1b; }

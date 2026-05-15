@@ -1,0 +1,62 @@
+.register-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.custom-register-card .p-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.custom-register-card .p-card-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.custom-register-card .p-card-content,
+.custom-register-card p,
+.custom-register-card button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.btn-register {
+  background: transparent;
+  border: none;
+  color: #d6a049;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.btn-register:hover {
+  text-decoration: underline;
+}
+
+.login-footer-text {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.login-link {
+  color: #d6a049;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,160 @@
+.partidos-acciones {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.btn-sync {
+  background: #1d4ed8;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-sync:hover    { background: #1e40af; }
+.btn-sync:disabled { background: #333; cursor: not-allowed; }
+
+.sync-hint {
+  font-size: 0.78rem;
+  color: #555;
+}
+
+/* TABLE */
+.partidos-thead {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr 80px 110px 100px 110px;
+  gap: 8px;
+  font-size: 0.7rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 8px 10px;
+  border-bottom: 1px solid #222;
+  margin-bottom: 4px;
+}
+
+.partidos-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr 80px 110px 100px 110px;
+  gap: 8px;
+  align-items: center;
+  padding: 11px 8px;
+  font-size: 0.82rem;
+}
+
+.partidos-hr {
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  margin: 0;
+}
+
+.p-nombre  { font-weight: 600; color: #eee; }
+.p-fecha   { color: #999; font-size: 0.78rem; }
+.p-estadio { color: #aaa; font-size: 0.78rem; }
+.p-score   { font-weight: 700; text-align: center; color: #ddd; }
+
+.p-estado {
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.estado-programado { background: #0f3060; color: #60a5fa; }
+.estado-envivo     { background: #0f4023; color: #4ade80; }
+.estado-finalizado { background: #222;    color: #888;    }
+.estado-pospuesto  { background: #3b2200; color: #fb923c; }
+
+.p-data {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.data-ok      { background: #0f4023; color: #4ade80; }
+.data-pending { background: #3b2200; color: #fb923c; }
+
+.p-acciones {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-editar {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #ccc;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.btn-editar:hover { background: #2a2a2a; color: white; }
+
+/* EDIT PANEL */
+.edit-panel {
+  background: #161616;
+  border: 1px solid #1d4ed8;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 0 8px 4px;
+}
+
+.edit-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edit-row label {
+  font-size: 0.78rem;
+  color: #888;
+}
+
+.edit-select {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.edit-input {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+  width: 60px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.btn-guardar {
+  background: #1d4ed8;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-guardar:hover { background: #1e40af; }
