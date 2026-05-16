@@ -13,4 +13,4 @@ const PagoTiquetes = () => {
   );
 };
 
-export default PagoTiquetes;
+export default PagoTiquetes;  

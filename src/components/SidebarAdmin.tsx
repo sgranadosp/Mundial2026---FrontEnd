@@ -4,7 +4,7 @@ import "./SidebarAdmin.css";
 const SidebarAdmin = () => {
   return (
     <aside className="sidebar-admin">
-      <div className="sidebar-admin-label">PANEL ADMIN</div>
+      <div className="sidebar-admin-label">PANEL ADMINISTRADOR</div>
       <ul>
         <li>
           <NavLink
